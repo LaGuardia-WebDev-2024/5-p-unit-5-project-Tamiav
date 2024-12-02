@@ -1,13 +1,13 @@
 <!-- Unit 5 Project
 Requirements
 [  ] <div> and <span>
-[  ] height: and width:
+[yes  ] height: and width:
 [  ] margin: and padding: 
-[  ] Three Images
+[  yes] Three Images
 
 Select ONE Additional Feature to Add  
 [ no ] Feature 1 - Flexbox
-[ no ] Feature 2 - Flip Card
+[ yes] Feature 2 - Flip Card
 [ no ] Feature 3 - Navbar
 [ no ] Feature 4 - Shaking Animation
 [ no ] Feature 5 - Gradient Background
@@ -16,17 +16,272 @@ Select ONE Additional Feature to Add
 
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Unit 5 Project</title>
+    <meta charset="utf-8" />
+    <style>
+      {background: blue;}
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
 
-<head>
-  <title>Unit 5 Project</title>
-  <meta charset="utf-8">
-  <style>
+      .flip-card {
+        background-color: transparent;
+        width: 300px;
+        height: 300px;
+        perspective: 1000px;
+      }
 
-  </style>
-</head>
-<body>
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      }
 
+      .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+      }
+
+      .flip-card-front,
+      .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+
+      .flip-card-front {
+        background-color: #bbb;
+        color: black;
+      }
+
+      .flip-card-back {
+        background-color: #2980b9;
+        color: white;
+        transform: rotateY(180deg);
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .flip-card {
+        background-color: transparent;
+        width: 300px;
+        height: 300px;
+        perspective: 1000px;
+      }
+
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      }
+
+      .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+      }
+
+      .flip-card-front,
+      .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+
+      .flip-card-front {
+        background-color: #bbb;
+        color: black;
+      }
+
+      .flip-card-back {
+        background-color: red;
+        color: white;
+        transform: rotateY(180deg);
+      }
+      
+      
+      
+      
+
+      .flip-card {
+        background-color: transparent;
+        width: 400px;
+        height: 300px;
+        perspective: 1000px;
+      }
+
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      }
+
+      .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+      }
+
+      .flip-card-front,
+      .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+
+      .flip-card-front {
+        background-color: #bbb;
+        color: black;
+      }
+
+      .flip-card-back {
+        background-color: #
+          blue;
+        color: white;
+        transform: rotateY(180deg);
+      }
+      .main {
+        background: linear-gradient(to bottom, rgb(0, 255, 156) 0%,rgb(255, 41, 41)100%);
+        display: flex;
+        justify-content: space-around; 
+        
+        
  
+}
+      }
+       
+        
+ 
+}
+      
+      ul{
+        list-style: name;
+      margin: 0;
+      padding: 0;
+      
+      background-color: black;
+      overflow: hidden;
+      
+       position: fixed;
+       top: 0;
+       width: 100%;
+      }
+      li { display: inline;}
+      li a{
+        test-decoration: none;
+        padding: 8px;
+        background-color: grey;
+        color: lightgreen;
+        
+      }
+      
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: 
+          linear-gradient(to bottom, rgb(255, 41, 41) 0%,rgb(0, 255, 156)100%);
+         }
+    </style>
+  </head>
+  <body>
+     <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="news.html">ideas</a></li>
+     
+    </ul>
+   
+      <h1> <span style="color:blue">Christmas</span> gift exchange</h1>
+ <div class="main">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              src="https://cdn.britannica.com/38/196638-131-7BF02881/Santa-Claus.jpg"
+              alt="Avatar"
+              style="width: 400px; height: 300px"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>About it</h1>
+            <p></p>
+            <p>the gift exchange is on December 24th, and you have a budget of $100.</p>
+            
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              src="https://www.gallerycollection.com/blog/wp-content/uploads/2022/11/christmas-greetings-1629475661.jpg"
+              alt="Avatar"
+              style="width: 400px; height: 300px"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1> Rules </h1>
+            <p></p>
+            <p> The rules are you have to buy a gift/gifts that are associated with the color you are given. ie: i have the color red so I can only buy red gifts. Then, on the 24th we will go around in a circle and guess who got them a present, it doesnt matter if you are right or wrong because you will still get your gift. </p>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              src="https://sloanes.co.th/wp-content/uploads/2022/10/800px-Christmas_Tree_56651310.jpeg"
+              alt="Avatar"
+              style="width: 400px; height: 300px"
+            />
+          </div>
+          <div class="flip-card-back">
+           <h1>Other things </h1>
+            <p></p>
+           <p> you should wear christmas clothing and there will be treats such as cookies and milk, you can bring any other snack you want.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+     <div class="main">
+    <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              src="https://img.freepik.com/premium-photo/christmas-decorations-merry-christmas-greetings-wooden-table_11304-1707.jpg"
+              alt="Avatar"
+              style="width: 400px; height: 300px"
+            />
+          </div>
+          <div class="hello">
+            <img
+               src="https://img2.10bestmedia.com/Images/Photos/410060/GettyImages-1427748072_55_660x440.jpg "
+              style="width: 400px; height: 300px"
+                 
+ 
+            />
+           
+          </div>
+        </div>
+      </div>
 
-</body>
+    
+    
+  </body>
 </html>
